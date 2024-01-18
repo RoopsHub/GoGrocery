@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+  <div class="menu-bar">
+    <label for="menuDropdown">SELECT category:</label>
+    <select id="menuDropdown" onchange="selectMenu()">
+      <option value="default" selected disabled>Select an option</option>
+      <option value="myOrders">My Orders</option>
+      <option value="offers">Offers</option>
+      <option value="dairy">Dairy</option>
+      <option value="meat">Meat</option>
+    </select>
+  </div>
+  
+
+  <div class="home-container">
+    <h2>Welcome to the GoGrocery Shopping Page!</h2>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search products..." id="searchInput">
+      <button onclick="searchProducts()">Search</button>
+    </div>
+  
+
+    <div class="product-container">
+      <div class="product">
+        <img src="Product1.jpeg" alt="Product 1">
+        <p>Bread</p>
+        <p>$1.99</p>
+        <button onclick="addToCart(1)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="Product2.jpeg" alt="Product 2">
+        <p>JasmineRice</p>
+        <p>$12.99</p>
+        <button onclick="addToCart(2)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="purchase-container" id="purchaseContainer">
+    <h2>Checkout and Provide Your Banking Details</h2>
+    <button onclick="proceedToPurchase()">Proceed to Purchase</button>
+  </div>
+
+
+  <script src="script1.js"></script>
+
+
+</body>
+</html>

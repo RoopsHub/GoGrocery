@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purchase Page</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <div class="purchase-container">
+    <h2>Enter Your Card Details</h2>
+    <form id="paymentForm">
+      <label for="cardNumber">Card Number:</label>
+      <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter 16-digit card number" required>
+
+      <label for="expiry">Expiry Date:</label>
+      <div class="expiry-inputs">
+        <input type="text" id="expiryMonth" name="expiryMonth" placeholder="MM" required>
+        <input type="text" id="expiryYear" name="expiryYear" placeholder="YY" required>
+      </div>
+
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+
+      <button type="button" onclick="proceedToPay()">Proceed to Pay</button>
+    </form>
+  </div>
+
+  <script src="script2.js"></script>
+
+</body>
+</html>
